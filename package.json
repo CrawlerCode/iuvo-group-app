@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0",
+    "name": "iuvo-group-app",
+    "app-name": "Iuvo group",
+    "package-name": "iuvo.group",
+    "project-type": "webview",
+    "icon": "./assets/icon/icon.png",
+    "dist-path": "./dist",
+    "permission": [
+        "android.permission.INTERNET"
+    ],
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start:dev": "node .",
+        "build": "androidjs build --release",
+        "install": "adb install dist\\iuvo-group-app.apk"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "androidjs": "^2.0.2"
+    },
+    "project-name": "iuvo-group-app",
+    "theme": {
+        "fullScreen": true,
+        "colorPrimary": "#1f1f1f",
+        "colorPrimaryDark": "#1f1f1f"
+    }
+}
